@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'DJBSissy';
+  src: url("DJBSissy.eot");
+  /* IE9 Compat Modes */
+  src: url("DJBSissy.eot?#iefix") format("embedded-opentype"), url("DJBSissy.woff2") format("woff2"), url("DJBSissy.woff") format("woff"), url("DJBSissy.ttf") format("truetype"), url("DJBSissy.otf") format("truetype");
+  font-weight: normal; }
+
+/*# sourceMappingURL=fonts.css.map */

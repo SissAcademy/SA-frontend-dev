@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-regular.eot?#iefix") format("embedded-opentype"), url("bitter-regular.woff2") format("woff2"), url("bitter-regular.woff") format("woff"), url("bitter-regular.ttf") format("truetype"), url("bitter-regular.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-italic.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-italic.eot?#iefix") format("embedded-opentype"), url("bitter-italic.woff2") format("woff2"), url("bitter-italic.woff") format("woff"), url("bitter-italic.ttf") format("truetype"), url("bitter-italic.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-bold.eot?#iefix") format("embedded-opentype"), url("bitter-bold.woff2") format("woff2"), url("bitter-bold.woff") format("woff"), url("bitter-bold.ttf") format("truetype"), url("bitter-bold.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: bold; }
+#auth-page {
+  background-color: #401A34;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #auth-page header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0; }
+    #auth-page header h1 {
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold; }
+      #auth-page header h1 :first-child {
+        font-size: 38px;
+        line-height: 38px;
+        color: #9E0274;
+        text-shadow: 0 1px 3px black; }
+      #auth-page header h1 :last-child {
+        font-size: 60px;
+        line-height: 60px;
+        color: white;
+        text-shadow: 0 2px 5px black; }
+  #auth-page main {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 20px;
+    border-radius: 8px; }
+    #auth-page main input, #auth-page main button, #auth-page main a {
+      width: 240px;
+      margin: 0 0 12px 0; }
+    #auth-page main > :last-child {
+      margin-bottom: 0; }
+    #auth-page main a {
+      color: #9E0274; }
+      #auth-page main a:hover {
+        text-shadow: 0 0 1px #9E0274; }
+    #auth-page main form.login {
+      display: flex;
+      flex-direction: column; }
+      #auth-page main form.login ::-webkit-input-placeholder {
+        text-align: center; }
+      #auth-page main form.login ::-webkit-input-placeholder {
+        text-align: center; }
+      #auth-page main form.login :-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center; }
+      #auth-page main form.login ::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center; }
+      #auth-page main form.login :-ms-input-placeholder {
+        text-align: center; }
+      #auth-page main form.login input {
+        background: transparent;
+        height: 40px;
+        padding: 8px;
+        color: white;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid #9E0274;
+        border-radius: 4px; }
+      #auth-page main form.login input:hover {
+        border-top: 2px solid rgba(255, 255, 255, 0.75);
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        border-left: 2px solid rgba(255, 255, 255, 0.75); }
+      #auth-page main form.login input:focus {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-left: 2px solid white; }
+      #auth-page main form.login button:hover {
+        box-shadow: 0 0 4px 0 #9E0274; }
+
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-regular.eot?#iefix") format("embedded-opentype"), url("bitter-regular.woff2") format("woff2"), url("bitter-regular.woff") format("woff"), url("bitter-regular.ttf") format("truetype"), url("bitter-regular.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-italic.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-italic.eot?#iefix") format("embedded-opentype"), url("bitter-italic.woff2") format("woff2"), url("bitter-italic.woff") format("woff"), url("bitter-italic.ttf") format("truetype"), url("bitter-italic.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Bitter';
+  src: url("bitter-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("bitter-bold.eot?#iefix") format("embedded-opentype"), url("bitter-bold.woff2") format("woff2"), url("bitter-bold.woff") format("woff"), url("bitter-bold.ttf") format("truetype"), url("bitter-bold.otf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: bold; }
+#welcome-page {
+  background: url("../images/login/female-summer-bg.jpg") no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #welcome-page header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0; }
+    #welcome-page header h1 {
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold; }
+      #welcome-page header h1 :first-child {
+        font-size: 38px;
+        line-height: 38px;
+        color: #9E0274;
+        text-shadow: 0 1px 3px black; }
+      #welcome-page header h1 :last-child {
+        font-size: 60px;
+        line-height: 60px;
+        color: white;
+        text-shadow: 0 2px 5px black; }
+  #welcome-page div.main-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; }
+    #welcome-page div.main-container main {
+      background-color: rgba(255, 193, 204, 0.6);
+      width: 100vw;
+      height: auto;
+      border-radius: 16px;
+      padding: 20px 40px; }
+      @media screen and (min-width: 1025px) {
+        #welcome-page div.main-container main {
+          width: 732px; } }
+      #welcome-page div.main-container main h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold; }
+      #welcome-page div.main-container main p {
+        margin-bottom: 8px; }
+      #welcome-page div.main-container main div.image {
+        background: url(../images/welcome/form3.jpg) no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 218px;
+        border-radius: 8px;
+        float: left; }
+      #welcome-page div.main-container main div.buttons {
+        width: 50%;
+        height: 218px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #welcome-page div.main-container main div.buttons button {
+          margin: 0; }
+        #welcome-page div.main-container main div.buttons :first-child {
+          margin-bottom: 32px; }
+  #welcome-page div.popup-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    #welcome-page div.popup-container div.popup-background {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.6);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      tab-index: -1; }
+    #welcome-page div.popup-container form.login {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 12px 20px;
+      border-radius: 8px; }
+      #welcome-page div.popup-container form.login input {
+        background: transparent;
+        width: 160px;
+        height: 28px;
+        margin-bottom: 8px;
+        padding: 4px;
+        font-size: 12px;
+        color: white;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid #9E0274;
+        border-radius: 4px; }
+      #welcome-page div.popup-container form.login ::-webkit-input-placeholder {
+        text-align: center; }
+      #welcome-page div.popup-container form.login ::-webkit-input-placeholder {
+        text-align: center; }
+      #welcome-page div.popup-container form.login :-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center; }
+      #welcome-page div.popup-container form.login ::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center; }
+      #welcome-page div.popup-container form.login :-ms-input-placeholder {
+        text-align: center; }
+      #welcome-page div.popup-container form.login input:hover {
+        border-top: 2px solid rgba(255, 255, 255, 0.75);
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        border-left: 2px solid rgba(255, 255, 255, 0.75); }
+      #welcome-page div.popup-container form.login input:focus {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-left: 2px solid white; }
+      #welcome-page div.popup-container form.login button[type='submit'] {
+        width: 160px;
+        margin: 0; }
+      #welcome-page div.popup-container form.login button[type='submit']:hover {
+        box-shadow: 0 0 4px 0 #9E0274; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  font: inherit;
+  box-sizing: border-box; }
+
+body {
+  font-family: Bitter; }
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+button {
+  background-color: #9E0274;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  width: 240px;
+  margin: 20px 0; }
+
+.page {
+  min-width: 100vw;
+  min-height: 100vh; }
+
+/*# sourceMappingURL=main.css.map */

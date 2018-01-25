@@ -1,0 +1,41 @@
+@import "values";
+@import "auth";
+@import "welcome";
+
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {font-family: Bitter}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+a {cursor: pointer; text-decoration: none}
+
+button
+{
+  background-color: $flirt;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  width: 240px;
+  margin: 20px 0;
+}
+
+.page
+{
+  min-width: 100vw;
+  min-height: 100vh;
+}
