@@ -59,3 +59,10 @@ typings/
 
 # For WebStorm
 .idea
+
+## Ignore project files created by IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+overlays/
