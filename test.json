@@ -1,0 +1,25 @@
+{
+  "studentId": {
+    "daily-habits": [ //array of months
+      [ //array of days
+        {
+          "date": "2017-02-02",
+          "sleep": {
+            "status": "done",
+            "last-edit-date": "2017-02-02 08:00:13.567"
+          }
+        }
+      ]
+    ]
+  },
+  "studentId1": {
+    "daily-habits": [ //array of months
+      {
+        "sleep": [{"date": "2017-02-02", "status": "done", "last-edit-date": "2017-02-02 08:00:13.567"}],
+        "yoga": [{"date": "2017-02-02", "status": "done", "last-edit-date": "2017-02-02 08:00:13.567"}]
+      }
+    ]
+  }
+
+}
+

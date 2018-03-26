@@ -1,10 +1,8 @@
-@import "values";
-@import "fonts";
+@import "values.scss";
 
 #auth-page
 {
   background-color: $wine-berry;
-  background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -86,8 +84,6 @@
       :-ms-input-placeholder {
         text-align: center;
       }
-
-
 
       input
       {

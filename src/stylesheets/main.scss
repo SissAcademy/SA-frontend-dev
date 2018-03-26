@@ -1,6 +1,12 @@
-@import "values";
-@import "auth";
-@import "welcome";
+@import "values.scss";
+@import "fonts.scss";
+@import "auth.css";
+@import "welcome.css";
+@import "STB/daily-habits.css";
+@import "STB/release-log.css";
+@import "STB/sissy-training-book.css";
+@import "for-test.css";
+
 
 *
 {
@@ -8,12 +14,11 @@
   padding: 0;
   outline: none;
   border: none;
-  overflow: hidden;
-  font: inherit;
   box-sizing: border-box;
 }
 
-body {font-family: Bitter}
+
+body {font-family: Bitter;}
 
 button, input[type="submit"], input[type="reset"] {
   background: none;
@@ -23,6 +28,8 @@ button, input[type="submit"], input[type="reset"] {
   outline: inherit;
 }
 a {cursor: pointer; text-decoration: none}
+h1,h2,h3,h4 {text-align: center; text-transform: capitalize}
+ul {list-style: none}
 
 button
 {
@@ -36,6 +43,6 @@ button
 
 .page
 {
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }

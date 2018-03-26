@@ -1,0 +1,39 @@
+@import "../values.scss";
+
+#sleep-log-page
+{
+  
+  main
+  {
+    margin-top: 40px;
+    
+    header.STB-section-header
+    {
+      h1 {text-align: left}
+      height: 100px;
+    }
+    
+    section.main-section
+    {
+      display: flex;
+      position: relative;
+      
+      section#overview
+      {
+        table
+        {
+          :first-letter {text-transform: capitalize;}
+          border-collapse: collapse;
+          th,td {padding: 8px}
+          th {background-color: $flamingo; color: white;}
+          td {color: $mai-tai;}
+          & > :nth-of-type(odd){background-color: $pippin;}
+          td.delta-days {color:$dusty-gray}
+          
+          select {width: 100%; height: 100%; background-color: transparent; color: inherit}
+          select:first-letter,option:first-letter {text-transform: capitalize;}
+        }
+      }
+    }
+  }
+}

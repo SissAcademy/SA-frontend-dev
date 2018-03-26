@@ -1,0 +1,176 @@
+@import "../values.scss";
+
+$pic-denied: "heart-shaped-locked-padlock.svg";
+
+#daily-habits-page
+{
+  main
+  {
+    section.main-section
+    {
+      display: flex;
+      position: relative;
+
+      section#overview
+      {
+        display: flex;
+        background-color: white;
+        padding: 0 40px 40px 0;
+
+        section.month
+        {
+          display: flex;
+          flex-direction: column;
+          top: 40px;
+
+          h2 {background-color: $venice-blue; color: white; height: 40px}
+          section.weeks
+          {
+            display: flex;
+
+            table
+            {
+              table-layout: fixed;
+              min-width: 282px;
+              border-spacing: 0;
+              border-collapse: collapse;
+              float: left;
+
+              th,td {width: 40px; height: 40px; border: 1px solid black; border-left: none}
+              th {background-color: $spindle}
+              th.week {background-color: $astral; color: white}
+              td
+              {
+
+                button.checkbox-custom
+                {
+                  border-radius: 0;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  background-color: black;
+
+                  &.denied {mask: url("../../images/heart-shaped-locked-padlock.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+                  &.failed {mask: url("../../images/broken-heart-divided-in-two-parts.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+                  &.missed {mask: url("../../images/question-mark.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+                  &.partly-done {mask: url("../../images/is-approximately-equal-to-symbol.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+                  &.done {mask: url("../../images/favorite-heart-button.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+                }
+                button.checkbox-custom.energy {background-color: $chelsea-cucumber;}
+                button.checkbox-custom.nutrition {background-color: $wedgewood;}
+                button.checkbox-custom.conditioning {background-color: $fire-bush;}
+                button.checkbox-custom.style {background-color: $boston-blue;}
+                button.checkbox-custom.social {background-color: $butterfly-bush;}
+                button.checkbox-custom.empty {background-color: white;}
+              }
+            }
+
+            & > :nth-child(1) {td,th {border-left: 1px solid black;}}
+          }
+        }
+      }
+
+      aside#labels
+      {
+        flex-shrink: 0;
+        display: inline-block;
+        float: left;
+
+        section.subgroup-labels
+        {
+          margin-top: 161px;
+          float: left;
+          ul
+          {
+            li
+            {
+              display: flex;
+              height: 40px;
+              align-items: center;
+              padding: 0 16px;
+            }
+          }
+
+          ul.energy {background-color: $sprout; color: $chelsea-cucumber;}
+          ul.nutrition {background-color: $opal; color: $wedgewood;}
+          ul.conditioning {background-color: $double-pearl-lusta; color: $fire-bush;}
+          ul.style {background-color: $cornflower; color: $boston-blue;}
+          ul.social {background-color: $wistful; color: $butterfly-bush;}
+        }
+      }
+
+      aside#details
+      {
+        position: fixed;
+        display: inline-block;
+        top:40px;
+        right: 0;
+        bottom: 0px;
+        width: 320px;
+        border-left: 2px solid $plum;
+        padding: 28px 40px 40px 40px;
+
+        h2 {margin-bottom: 5Rem}
+        h3 {margin-bottom: 10Rem}
+
+        ul
+        {
+          li
+          {
+            margin-bottom: 2Rem;
+
+            div.icon
+            {
+              float: left;
+              width: 4Rem;
+              height: 4Rem;
+              &.denied {mask: url("../../images/heart-shaped-locked-padlock.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+              &.failed {mask: url("../../images/broken-heart-divided-in-two-parts.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+              &.missed {mask: url("../../images/question-mark.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+              &.partly-done {mask: url("../../images/is-approximately-equal-to-symbol.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+              &.done {mask: url("../../images/favorite-heart-button.svg") no-repeat 50% 50%; mask-size: 75% 75%;}
+              &.empty {background-color: white}
+              background-color: $chelsea-cucumber;
+            }
+          }
+        }
+
+        &.energy
+        {
+          background-color: $sprout;
+          border-left-color: $chelsea-cucumber;
+          h2,h3,h4 {color:$chelsea-cucumber;}
+          ul > li >div.icon {background-color: $chelsea-cucumber;}
+        }
+        &.nutrition
+        {
+          background-color: $opal;
+          border-left-color: $wedgewood;
+          h2,h3,h4 {color:$wedgewood;}
+          ul > li >div.icon {background-color: $wedgewood}
+        }
+        &.conditioning
+        {
+          background-color: $double-pearl-lusta;
+          border-left-color: $fire-bush;
+          h2,h3,h4 {color:$fire-bush;}
+          ul > li >div.icon {background-color: $fire-bush}
+        }
+        &.style
+        {
+          background-color: $cornflower;
+          border-left-color: $boston-blue;
+          h2,h3,h4 {color:$boston-blue;}
+          ul > li >div.icon {background-color: $boston-blue}
+        }
+        &.social
+        {
+          background-color: $wistful;
+          border-left-color: $butterfly-bush;
+          h2,h3,h4 {color:$butterfly-bush;}
+          ul > li >div.icon {background-color: $butterfly-bush}
+        }
+      }
+    }
+  }
+}

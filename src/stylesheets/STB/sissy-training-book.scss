@@ -1,0 +1,66 @@
+@import "../values.scss";
+
+.STB-page
+{
+  
+  background-color: white;
+  header.page-header {
+    background-color: $flirt;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    min-width: 100%;
+    width: 100%;
+    height: 40px;
+  }
+  main
+  {
+    margin-top: 40px;
+    margin-left: 40px;
+    
+    nav
+    {
+      width: 100%;
+      height: 40px;
+    
+      ul
+      {
+        height: 100%;
+        li
+        {
+          height: 100%;
+          float: left;
+        
+          a
+          {
+            color: inherit;
+            height: 40px;
+            padding: 4px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            border-right: 2px solid;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+          a.sleep {color: $sleep-log-medium}
+          a.sleep.active {color: $sleep-log-dark}
+          a.release {color: $release-log-medium}
+          a.release.active {color: $release-log-dark}
+          a.daily-habits {color: $sleep-log-medium}
+          a.daily-habits.active {color: $sleep-log-dark}
+        }
+      }
+    }
+    
+    header.STB-section-header
+    {
+      h1 {text-align: left}
+      height: 100px;
+    }
+    
+  }
+  
+}
+

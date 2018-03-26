@@ -2,7 +2,6 @@ import React from 'react'
 import {withRouter} from "react-router-dom";
 import store, {ReducerRoot} from '../store'
 
-
 class Home extends React.Component
 {
     constructor(props, context)

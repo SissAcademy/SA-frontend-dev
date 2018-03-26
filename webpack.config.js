@@ -25,7 +25,7 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ],
-    devtool: 'source-map',
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -46,19 +46,17 @@ module.exports = {
             }, {
                 test: /\.css$/,
                 loaders: [
-                    "style-loader",
+                    "style-loader?sourceMap",
                     "css-loader?sourceMap"
                 ]
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                loader: ['file-loader'],
-                //options: {name: "images/[name].[ext]",}
+                loader: 'file-loader?name=public/images/[name].[ext]'
             },
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                loader: ['file-loader'],
-                //options: {name: "fonts/[name].[ext]",}
+                test: /\.(eot|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=public/fonts/[name].[ext]'
             },
             {
                 test: /\.(csv|tsv)$/,
