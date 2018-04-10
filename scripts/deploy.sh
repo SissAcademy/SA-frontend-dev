@@ -5,9 +5,9 @@ chmod 600 /tmp/deploy_rsa # Allow read access to the private key
 ssh-add /tmp/deploy_rsa # Add the private key to SSH
 q
 ssh -o "StrictHostKeyChecking no" $DEPLOY_USER@$FRONTEND_SERVER <<EOF
-  cd SA-backend-dev/
+  cd SA-frontend-dev/
   git checkout -- .
-  git checkout master
+  git checkout deploy
   git pull
   npm install
   npm restart;
