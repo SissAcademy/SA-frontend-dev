@@ -7,10 +7,8 @@ q
 ssh -o "StrictHostKeyChecking no" $DEPLOY_USER@$FRONTEND_SERVER <<EOF
   cd SA-frontend-dev/
   git checkout -- .
-  git checkout deploy
+  git checkout master
   git pull
   npm install
   npm restart;
 EOF
-
-#test
