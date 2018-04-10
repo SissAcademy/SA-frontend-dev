@@ -12,3 +12,5 @@ ssh -o "StrictHostKeyChecking no" $DEPLOY_USER@$FRONTEND_SERVER <<EOF
   npm install
   npm restart;
 EOF
+
+#test
