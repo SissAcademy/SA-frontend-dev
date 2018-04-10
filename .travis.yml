@@ -7,7 +7,4 @@ deploy:
   provider: script
   script: bash scripts/deploy.sh
   on:
-    branch: master
-before_install:
-- openssl aes-256-cbc -K $encrypted_5f0e76b6d918_key -iv $encrypted_5f0e76b6d918_iv
-  -in deploy_rsa.enc -out deploy_rsa -d
+    branch: deployS
