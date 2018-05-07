@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "webpack",
-    "server": "node dev-server.js"
+    "start": "pm2 start dev-server.js",
+    "restart": "pm2 restart all",
+    "devel": "pm2 start dev-server.js --watch"
   },
   "keywords": [],
   "author": "ChristineStretches <selfcurious@gmail.com>",
@@ -22,7 +24,8 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "webpack": "^3.10.0",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.1",
+    "pm2": "^2.10.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
@@ -45,7 +48,13 @@
     "postcss-import": "^11.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
+<<<<<<< HEAD
     "url-loader": "^0.6.2",
     "webpack-dev-server": "^2.10.1"
+=======
+    "webpack-dev-server": "^2.10.1",
+    "mocha": "^5.0.5",
+    "chai": "^4.1.2"
+>>>>>>> 60e3eb7f6314a13a206a37a87e5eafcf834a6338
   }
 }
