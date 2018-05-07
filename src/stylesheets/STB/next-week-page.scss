@@ -1,0 +1,223 @@
+@import "../values.scss";
+
+.next-week-page
+{
+  position: relative;
+  padding: 60px;
+  padding-top: 92px;
+  
+  h2
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: url("../../images/STB/top_corner.svg") no-repeat 0px 0;
+    background-size: cover;
+    top: -1px;
+    left:-2px;
+    width:204px;
+    height:48px;
+    padding-right: 28px;
+    font-size:18px;
+    color:#ffffff;
+    text-align:center;
+  }
+  
+  section.period
+  {
+    width: 464px;
+    margin-bottom:52px;
+    color:#9b9b9b;
+    
+    * {font-size:12px;}
+    
+    header
+    {
+      display: flex;
+      align-items: center;
+      
+      h3
+      {
+        display: inline-block;
+        margin-right: 12px;
+        font-size:24px;
+        color:#c93c80;
+        text-align:left;
+        text-transform: uppercase;
+      }
+      
+      label.checkbox-container
+      {
+        position: relative;
+        display: inline-block;
+        width: 29px;
+        height: 29px;
+        
+        input[type='checkbox']
+        {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        
+        input:checked ~ span.custom-checkbox {
+          background: url("../../images/STB/minus.png");
+          background-size: contain;
+        }
+        
+        span.custom-checkbox
+        {
+          background: url("../../images/STB/plus.png");
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+    
+    p.commitments-attention
+    {
+      display: flex;
+      align-items: center;
+      margin: 32px 0 76px 0;
+      font-weight: 300;
+      font-size:16px;
+      color:#f65d23;
+      text-align:center;
+      
+      &:before
+      {
+        content: "";
+        display: inline-block;
+        background: url("../../images/STB/icon_warning.png") no-repeat 0 0;
+        background-size: contain;
+        height: 24px;
+        width: 28px;
+        margin-right: 8px;
+      }
+    }
+    
+    div.table
+    {
+      width: 72px;
+      margin-top: 44px;
+      float: left;
+      text-align: right;
+      text-transform: capitalize;
+      
+      p:first-child {margin-bottom: 24px;}
+    }
+    ul.table
+    {
+      display: flex;
+      justify-content: space-between;
+      width: 356px;
+      float: left;
+      margin-left: 36px;
+      
+      li
+      {
+        display: flex;
+        flex-direction: column;
+        
+        p {text-align: center}
+        p:nth-of-type(2) {margin-bottom: 12px;}
+        img {margin-bottom: 16px;}
+      }
+    }
+    
+    & > p
+    {
+      margin-top: 12px;
+      margin-left: 130px;
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  
+  
+  section.reminders
+  {
+    width: 464px;
+    
+    h3
+    {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size:24px;
+      color:#c93c80;
+      text-align:left;
+    }
+    
+    ul
+    {
+      display: flex;
+      flex-wrap: wrap;
+      
+      li
+      {
+        display: flex;
+        margin-bottom: 24px;
+        &:nth-child(2n + 1) { margin-right: 24px;};
+        &:nth-child(2n + 1) article button {background: url("../../images/STB/icon_boob_c.svg") no-repeat 8px 0; padding-right: 2px;}
+        &:nth-child(2n)     article button {background: url("../../images/STB/icon_boob_dd.svg") no-repeat 0 0; padding-right: 7px;}
+        
+        
+        article.reminder
+        {
+          position: relative;
+          width:220px;
+          
+          padding: 12px 20px;
+          box-shadow:0 2px 4px 0 rgba(0,0,0,0.50);
+          
+          h1
+          {
+            margin-bottom: 12px;
+            font-weight: 200;
+            font-size:14px;
+            color:#ff85c2;
+            text-align:left;
+          }
+          
+          button.close
+          {
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 28px;
+            height: 28px;
+            margin: 0;
+            border-radius: 0;
+            font-weight: bold;
+            font-size:18px;
+            color:#ffffff;
+            text-align:right;
+          }
+          
+          p
+          {
+            margin-bottom: 12px;
+            font-size:12px;
+            color:#9b9b9b;
+            text-align:left;
+          }
+          
+          a
+          {
+            font-size:14px;
+            font-weight: bold;
+            color:rgba(255,133,194,0.55);
+            text-align:center;
+          }
+        }
+      }
+    }
+  }
+}

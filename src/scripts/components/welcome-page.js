@@ -1,18 +1,17 @@
 import React from 'react'
 import {withRouter} from "react-router-dom";
 import store, {ReducerRoot} from '../store'
+import AcademyHeader from './academy-header'
+import AcademyFooter from './academy-footer'
+import imageGirlInGrass from '../../images/welcome/mini-girl-in-grass.jpg'
+import imageGirlElegant from '../../images/welcome/mini-girl-elegant.jpg'
+import imageGirlNudePanties from '../../images/welcome/mini-girl-nude-panties.jpg'
 
-
-class Login extends React.Component
+class FrondPage extends React.Component
 {
     constructor(props, context)
     {
         super(props, context);
-        this.state =
-            {
-                isLoginPopupOpen: false,
-                content: 'standard'
-            };
         this.StateController = this.StateController.bind(this);
     }
 
@@ -21,103 +20,68 @@ class Login extends React.Component
         this.setState(newState);
     }
 
-    ContentStandard()
-    {
-        return (
-            <main className={'standard'}>
-                <h2>Want to become the girl of your dreams?</h2>
-                <p>
-                    Feel more confident, explore your sexuality, sensuality and femininity.
-                    Reach full sissification within a year; everything is possible at the Academy.
-                    A positive approach to the sissification that will make your dreams a reality!
-                </p>
-                <div className={'image'}/>
-                <div className={'buttons'}>
-                    <button onClick={()=>this.setState({content: 'information'})}>
-                        I want to learn more...
-                    </button>
-                    <button onClick={()=>this.setState({content: 'enroll'})}>
-                        I want to join the Academy!
-                    </button>
-                </div>
-            </main>);
-    }
-
-    ContentInformation()
-    {
-        return (
-            <main className={'information'}>
-                <h2>Want to become the girl of your dreams?</h2>
-                <p>
-                    Feel more confident, explore your sexuality, sensuality and femininity.
-                    Reach full sissification within a year; everything is possible at the Academy.
-                    A positive approach to the sissification that will make your dreams a reality!
-                </p>
-                <div className={'image'}/>
-                <div className={'buttons'}>
-                    <button>
-                        I want to learn more...
-                    </button>
-                    <button>
-                        I want to join the Academy!
-                    </button>
-                </div>
-            </main>);
-    }
-
-    ContentEnroll()
-    {
-        return (
-            <main className={'enroll'}>
-                {this.EnrollmentForm()}
-            </main>);
-    }
-
-    EnrollmentForm()
-    {
-        return (
-            <form>
-                <labe></labe>
-                <input/>
-                <labe></labe>
-                <input/>
-            </form>)
-    }
-
-    ContentSelection()
-    {
-        switch (this.state.content)
-        {
-            case 'standard':
-                return this.ContentStandard();
-            case 'information':
-                return this.ContentInformation();
-            case 'enroll':
-                return this.ContentEnroll();
-            default: console.log('ERROR! Wrong content type.')
-        }
-    }
-
     render()
     {
         console.log(store.getState());
         return (
-            <div id="welcome-page" className="page">
-                <header>
-                    <h1>
-                        <span>SISSIFICATION</span>
-                        <br/>
-                        <span>ACADEMY</span>
+            <div className="page welcome-page">
+                <AcademyHeader/>
+                <main>
+                    <h1 className={'main-header'}>
+                        <span className={'main-header__row-one'}>SISSIFICATION</span><br/>
+                        <span className={'main-header__row-two'}>ACADEMY</span>
                     </h1>
-                </header>
-                <div className={'main-container'}>
-                    <button>
-                        Login to the Academy
-                    </button>
-                    {this.ContentSelection()}
-                </div>
+                    <article className={'academy-promo-big academy-promo-big--enroll-now'}>
+                        <h1 className={'academy-promo-big__header'}>Enroll now</h1>
+                        <p className={'academy-promo-big__starting-phrase'}>
+                            Creating beautiful
+                            feminine girls
+                        </p>
+                        <p>
+                            The Academy is a well renowned sissyfication
+                            program combined with a modern online
+                            sissy training platform started 2018.
+                        </p>
+                        <p>
+                            Academy enrollment and the majority
+                            of our content is FREE, we also offer
+                            premium content and services for
+                            those that want even more
+                            personalization {"<3"}
+                        </p>
+                        <a className={'button button--no-border academy-promo-big__button academy-promo-big__button--enroll-now'} href={'/application'}>
+                            Enroll now
+                        </a>
+                    </article>
+                    <section className={'academy-small-promos-section'}>
+                        <ul className={'academy-small-promos-list'}>
+                            <li className={'academy-small-promos-list__list-item'}>
+                                <article className={'academy-promo-small'}>
+                                    <h1>Want to explore your feminine side?</h1>
+                                    <img className={"academy-promo-small__teaser"} src={imageGirlInGrass}/>
+                                    <a className={"button button--border academy-promo-small__link"} href={'/tour#academy_program'}>Learn about the academy program</a>
+                                </article>
+                            </li>
+                            <li className={'academy-small-promos-list__list-item'}>
+                                <article className={'academy-promo-small'}>
+                                    <h1>Want to feminize your partner or toy?</h1>
+                                    <img className={"academy-promo-small__teaser"} src={imageGirlElegant}/>
+                                    <a className={"button button--border academy-promo-small__link"} href={'/tour#behavior_adjustment_platform'}>Discover our behavior adjustment platform</a>
+                                </article>
+                            </li>
+                            <li className={'academy-small-promos-list__list-item'}>
+                                <article className={'academy-promo-small'}>
+                                    <h1>Modern AI powered online feminization</h1>
+                                    <img className={"academy-promo-small__teaser"} src={imageGirlNudePanties}/>
+                                    <a className={"button button--border academy-promo-small__link"} href={'/tour#campus_platform'}>Read about the campus platform</a>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+                <AcademyFooter/>
             </div>)
     }
 }
 
-export default withRouter(Login);
+export default withRouter(FrondPage);

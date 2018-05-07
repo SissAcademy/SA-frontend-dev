@@ -2,11 +2,17 @@
 @import "fonts.scss";
 @import "auth.css";
 @import "welcome.css";
-@import "STB/daily-habits.css";
-@import "STB/release-log.css";
-@import "STB/sissy-training-book.css";
+@import "popups.css";
+@import "spinner.css";
+@import "STB/STB-page.css";
+@import "STB/today-page.css";
+@import "academy-header.css";
+@import "academy-footer.css";
 @import "for-test.css";
+@import "widgets.css";
 
+
+//--------avocode-when-go-rich---------------
 
 *
 {
@@ -18,31 +24,137 @@
 }
 
 
-body {font-family: Bitter;}
-
+.visually-hidden {font-size:0; width:0; height:0;}
 button, input[type="submit"], input[type="reset"] {
   background: none;
   color: inherit;
   padding: 0;
+  margin: 0;
   cursor: pointer;
   outline: inherit;
 }
 a {cursor: pointer; text-decoration: none}
-h1,h2,h3,h4 {text-align: center; text-transform: capitalize}
 ul {list-style: none}
-
-button
-{
-  background-color: $flirt;
-  height: 40px;
-  border-radius: 8px;
-  color: white;
-  width: 240px;
-  margin: 20px 0;
-}
 
 .page
 {
-  width: 100%;
   min-height: 100vh;
 }
+
+div.academy__logo
+{
+  margin-bottom: 12px;
+  
+  img
+  {
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  span
+  {
+    font-family:Noteworthy-Light;
+    font-size:18px;
+    color:rgba(255,255,255,0.71);
+    text-align:center;
+  }
+}
+
+.button
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.button--no-border
+{
+  background:#ff85c2;
+  width:200px;
+  min-height:50px;
+  padding: 8px 24px;
+  border-radius:8px;
+  font-family:Roboto-Light;
+  font-size:24px;
+  color:#ffffff;
+  
+  &:focus,&:hover
+  {
+    background:#c93d80;
+  }
+  
+  &:active
+  {
+    background:#8c2a59;
+  }
+  
+  &:disabled
+  {
+    background:rgba(255,133,194,0.49);
+  }
+}
+
+.button--border
+{
+  background: transparent;
+  width:200px;
+  min-height:50px;
+  border:2px solid #ff85c2;
+  border-radius:8px;
+  font-family:Roboto-Light;
+  font-size:24px;
+  color:#ff85c2;
+  
+  
+  &:focus,&:hover
+  {
+    border:2px solid #c93d80;
+    color:#c93d80;
+  }
+  
+  &:active
+  {
+    border:2px solid #8c2a59;
+    color:#8c2a59;
+  }
+  
+  &:disabled
+  {
+    background:rgba(255,133,194,0.04);
+    border:2px solid rgba(255,155,238,0.36);
+    color:rgba(209,171,197,0.78);
+  }
+}
+
+.button--small-no-border
+{
+  font-family:Roboto-Bold;
+  font-size:12px;
+  color:#ffffff;
+  text-align:center;
+  background:#c93d80;
+  border-radius:8px;
+  min-width:76px;
+  padding: 4px 12px;
+  min-height:24px;
+  
+  &:focus,&:hover
+  {
+    background:#8c2a59;
+  }
+  
+  &:active
+  {
+    background:#561836;
+  }
+  
+  &:disabled
+  {
+    opacity:0.74;
+    background:#c93d80;
+    color: rgba(255,255,255,0.5);
+  }
+}
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="23px" viewBox="0 0 15 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>user icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TopBar-(desktop)" transform="translate(-972.000000, -20.000000)" fill="#FFFFFF">
+            <g id="user" transform="translate(972.000000, 20.000000)">
+                <g id="user-icon">
+                    <path d="M0,22.6498064 C0,22.6498064 1.02531236,10.0696082 7.75298639,10.0002767 C14.4806604,9.93094524 14.9133935,22.9123634 14.9133935,22.9123634 L0,22.6498064 Z" id="Path-6"></path>
+                    <ellipse id="Oval-3" cx="8.3359375" cy="4.255" rx="4.3359375" ry="4.255"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

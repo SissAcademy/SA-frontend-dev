@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Clock icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TB---Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TrainingBook---Overview" transform="translate(-55.000000, -232.000000)" fill="#9B9B9B">
+            <g id="Clock-icon" transform="translate(55.000000, 232.000000)">
+                <path d="M21.5,43 C9.62587788,43 0,33.3741221 0,21.5 C0,9.62587788 9.62587788,0 21.5,0 C33.3741221,0 43,9.62587788 43,21.5 C43,33.3741221 33.3741221,43 21.5,43 Z M21.5,39.6493506 C31.5236096,39.6493506 39.6493506,31.5236096 39.6493506,21.5 C39.6493506,11.4763904 31.5236096,3.35064935 21.5,3.35064935 C11.4763904,3.35064935 3.35064935,11.4763904 3.35064935,21.5 C3.35064935,31.5236096 11.4763904,39.6493506 21.5,39.6493506 Z" id="Combined-Shape"></path>
+                <circle id="Oval-2" cx="21.6753247" cy="7.67532468" r="1.67532468"></circle>
+                <circle id="Oval-2" cx="21.6753247" cy="34.6753247" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(35.841266, 20.841266) rotate(-276.000000) translate(-35.841266, -20.841266) " cx="35.8412662" cy="20.8412662" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(7.841266, 20.841266) rotate(-276.000000) translate(-7.841266, -20.841266) " cx="7.84126619" cy="20.8412662" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(31.356288, 31.356288) rotate(-231.000000) translate(-31.356288, -31.356288) " cx="31.3562878" cy="31.3562878" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(12.356288, 11.356288) rotate(-231.000000) translate(-12.356288, -11.356288) " cx="12.3562878" cy="11.3562878" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(12.356288, 31.356288) rotate(-141.000000) translate(-12.356288, -31.356288) " cx="12.3562878" cy="31.3562878" r="1.67532468"></circle>
+                <circle id="Oval-2" transform="translate(31.356288, 11.356288) rotate(-141.000000) translate(-31.356288, -11.356288) " cx="31.3562878" cy="11.3562878" r="1.67532468"></circle>
+                <rect id="Rectangle" x="21" y="11" width="2.23376623" height="12.2857143"></rect>
+                <polygon id="Rectangle" transform="translate(25.507629, 23.234025) rotate(-66.000000) translate(-25.507629, -23.234025) " points="23.8323044 19.0457134 27.1829537 19.0457134 27.1829537 27.4223368 23.8323044 27.4223368"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,46 +1,5 @@
 #page-test
 {
-  width: 100vw;
-  header,footer
-  {
-    position: fixed;
-    background-color: #9E0274;
-    height: 100px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  header {top: 0}
-  footer {bottom: 0}
-
-  main
-  {
-    display: flex;
-    position: relative;
-    background-color: blue;
-    margin: 100px 0;
-
-    div.a
-    {
-      position: fixed;
-      left: 0;
-      background-color: red;
-      width: 320px;
-      height: 100%;
-      float: left;
-      color: black;
-      padding: 40px;
-    }
-    div.b
-    {
-      background-color: yellow;
-      height: 100%;
-      min-width: 4000px;
-      float: right;
-      margin-left: 320px;
-      padding: 40px;
-    }
-
-  }
+  
 
 }

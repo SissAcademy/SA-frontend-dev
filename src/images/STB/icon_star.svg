@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Star Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="8 12 3.29771798 14.472136 4.19577393 9.23606798 0.39154787 5.52786405 5.64885899 4.76393202 8 0 10.351141 4.76393202 15.6084521 5.52786405 11.8042261 9.23606798 12.702282 14.472136"></polygon>
+        <filter x="-28.1%" y="-29.7%" width="181.2%" height="182.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="TB---Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TrainingBook---Overview" transform="translate(-337.000000, -300.000000)">
+            <g id="Group-12" transform="translate(184.000000, 191.000000)">
+                <g id="Star-Icon" transform="translate(155.000000, 112.000000)">
+                    <g id="Star">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F8E81C" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke-opacity="0.453577899" stroke="#000000" stroke-width="1" d="M8,12.5648879 L12.4696115,14.9147017 L13.3663475,15.3861437 L13.1950862,14.3876134 L12.3414664,9.41062793 L15.957458,5.88590723 L16.6829327,5.17874414 L15.6803513,5.03306054 L10.6831738,4.30692814 L8.44836804,-0.221282856 L8,-1.12977573 L7.55163196,-0.221282856 L5.31682623,4.30692814 L0.319648711,5.03306054 L-0.682932701,5.17874414 L0.0425420242,5.88590723 L3.65853365,9.41062793 L2.80491382,14.3876134 L2.63365247,15.3861437 L3.53038855,14.9147017 L8,12.5648879 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

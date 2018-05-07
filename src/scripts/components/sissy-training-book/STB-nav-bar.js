@@ -13,11 +13,12 @@ export default class STBNavBar extends React.Component {
     {
         this.CheckForActive('lol');
         return(
-            <nav>
+            <nav className={"STB-navigation"}>
                 <ul>
                     <li><a href={"/daily-habits"} className={this.CheckForActive("daily-habits")}>Daily Habits</a></li>
                     <li><a href={"/release"} className={this.CheckForActive("release")}>Release Log</a></li>
                     <li><a href={"/sleep"} className={this.CheckForActive("sleep")}>Sleep Log</a></li>
+                    <li><a href={"/rules"} className={this.CheckForActive("rules")}>Rules</a></li>
                 </ul>
             </nav>
         )

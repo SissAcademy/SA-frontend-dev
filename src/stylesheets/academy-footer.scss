@@ -1,0 +1,143 @@
+@import "values.scss";
+@import "fonts.scss";
+
+
+footer.academy-footer
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background:#8c2958;
+  padding: 32px 0;
+  
+  p.academy-footer__warning
+  {
+    width: 100%;
+    margin-bottom: 32px;
+    font-family:Roboto-Regular;
+    font-size:12px;
+    color:rgba(255,255,255,0.44);
+    text-align:center;
+  }
+  
+  div.academy-footer__column:not(:last-of-type)
+  {
+    margin-right: 56px;
+  }
+  
+  div.academy-footer__column--one
+  {
+    
+    p.history
+    {
+      width:232px;
+      margin-bottom: 20px;
+      font-family:Noteworthy-Bold;
+      font-size:12px;
+      color:rgba(255,255,255,0.71);
+      text-align:left;
+    }
+    
+    p.copyright
+    {
+      font-family:Roboto-Regular;
+      font-size:12px;
+      color:rgba(255,255,255,0.76);
+      text-align:left;
+    }
+  }
+  
+  div.academy-footer__column--three
+  {
+    width: 200px;
+  }
+  
+  .link-outer
+  {
+    display: flex;
+    align-items: center;
+    background:#76234b;
+    box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.50);
+    width:312px;
+    height:40px;
+    margin-bottom: 12px;
+    border-radius:100px;
+    
+    img
+    {
+      display: inline-block;
+      content: '';
+      width:40px;
+      height: 40px;
+      margin-right: 8px;
+      border-radius: 40px;
+    }
+    
+    span
+    {
+      font-family:Roboto-Bold;
+      font-size:14px;
+      color:rgba(255,255,255,0.62);
+    }
+    
+    input
+    {
+      background: transparent;
+      font-family:Roboto-Italic;
+      font-size:14px;
+      color:rgba(255,255,255,0.62);
+      text-align:left;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid rgba(0,0,0,0.36);
+      ::placeholder {color:rgba(255,255,255,0.49);}
+    }
+    
+    button
+    {
+      background:#ff85c2;
+      color:#5b1939;
+  
+      font-size:14px;
+      font-family:Roboto-Bold;
+      width:67px;
+      height:28px;
+      margin-right: 8px;
+      margin-left: auto;
+      border-radius:100px;
+    }
+  }
+  
+  p.privacy-note
+  {
+    width: 312px;
+    b
+    {
+      font-family:Roboto-Black;
+    }
+    
+    font-family:Roboto-Bold;
+    font-size:12px;
+    color:rgba(255,255,255,0.44);
+    text-align:left;
+  }
+  
+  h3
+  {
+    margin-bottom: 16px;
+    font-family:Noteworthy-Bold;
+    font-size:18px;
+    color:rgba(255,255,255,0.71);
+  }
+  
+  h3:not(:first-of-type) {margin-top: 16px;}
+  
+  a.academy-footer__link
+  {
+    display: block;
+    margin-bottom: 12px;
+    font-family:Roboto-Bold;
+    font-size:12px;
+    color:#ffffff;
+    text-align:left;
+  }
+}

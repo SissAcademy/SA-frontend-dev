@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="43px" viewBox="0 0 48 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Rules Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TB---Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TrainingBook---Overview" transform="translate(-56.000000, -859.000000)">
+            <g id="Group-26" transform="translate(28.000000, 554.000000)">
+                <g id="Group-21" transform="translate(0.000000, 305.000000)">
+                    <g id="Rules-Icon" transform="translate(29.000000, 0.000000)">
+                        <g>
+                            <g id="Group" transform="translate(26.834145, 21.631852) rotate(34.000000) translate(-26.834145, -21.631852) translate(4.334145, 11.631852)" fill="#D2D2D2">
+                                <rect id="Rectangle-3" x="-2.48689958e-14" y="0" width="18.6440678" height="1.82608696"></rect>
+                                <rect id="Rectangle-3" x="6.21724894e-14" y="18" width="18.6440678" height="1.82608696"></rect>
+                                <rect id="Rectangle-3" x="2" y="3" width="14.9152542" height="14.6086957"></rect>
+                                <polygon id="Path-4" points="16.4430242 9.13884867 40.5357251 8 40.5357251 12.3429397 16 11.1763142"></polygon>
+                                <rect id="Rectangle-4" x="41" y="7" width="3.72881356" height="5.47826087"></rect>
+                            </g>
+                            <rect id="Rectangle-5" stroke="#D2D2D2" x="0" y="37" width="24.2372881" height="4.56521739"></rect>
+                            <rect id="Rectangle-5" fill="#D2D2D2" x="3" y="32" width="18.6440678" height="4.56521739"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

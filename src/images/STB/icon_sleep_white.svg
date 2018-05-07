@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="44px" viewBox="0 0 42 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Sleep Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TB---Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TrainingBook---Overview" transform="translate(-54.000000, -1078.000000)">
+            <g id="Group-25" transform="translate(25.000000, 973.000000)">
+                <g id="Sleep-Icon" transform="translate(30.000000, 101.000000)">
+                    <g>
+                        <text id="Z" font-family="Roboto-Black, Roboto" font-size="16" font-weight="700" fill="#FFFFFF">
+                            <tspan x="14" y="25">Z</tspan>
+                        </text>
+                        <text id="Z" font-family="Roboto-Black, Roboto" font-size="20" font-weight="700" fill="#FFFFFF">
+                            <tspan x="29" y="19">Z</tspan>
+                        </text>
+                        <text id="z" font-family="Roboto-Black, Roboto" font-size="16" font-weight="700" fill="#FFFFFF">
+                            <tspan x="2" y="33">z</tspan>
+                        </text>
+                        <g id="Group" transform="translate(20.000000, 41.500000) rotate(-360.000000) translate(-20.000000, -41.500000) translate(0.000000, 36.000000)" stroke="#FFFFFF" stroke-width="2">
+                            <path d="M37.6434266,6.71202311 C37.6434266,6.71202311 39.9488589,4.50880547 39.6947186,7.55862968 C39.4405784,10.6084539 38.0597842,10.0617897 36.6940807,9.75200148 C35.9929556,9.59296235 30.4870107,6.26224814 24.1117164,6.873251 C23.9278986,6.89086794 23.5423697,7.39694508 22.4169569,8.60288043 C21.2915441,9.80881579 19.7757149,9.00906615 18.7909192,8.0319632 C17.2502903,6.50336879 10.4197646,7.19836811 10.4197646,7.19836811 C10.4197646,7.19836811 9,6.873251 9,6.873251 C9,6.873251 9,4.21038477 9,4.21038477 C9,4.21038477 12.3809542,2.65389703 13.4366362,1.55621353 C14.4923181,0.458530017 17.3163253,-2.01235823 17.3163253,3.18685287 C18.0545908,3.18685287 18.0218561,3.00993394 20.3492439,3.3331818 C21.3614497,3.47376575 23.1552316,4.27759153 23.2395655,4.28241509 C23.4092688,4.29212145 27.8380241,4.18162028 28.0478499,4.21038477 C29.3459599,4.3883394 31.9115103,4.90695685 33.2575902,5.46861431 C35.3116235,6.32566834 37.6434266,6.71202311 37.6434266,6.71202311 Z" id="Path-4"></path>
+                            <circle id="Oval-3" cx="3.57142857" cy="6.57142857" r="3.57142857"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

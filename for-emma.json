@@ -1,0 +1,60 @@
+{
+  "daily_logs":
+  [
+    {
+      "date": "date object",
+
+      "commitments_mandatory":
+      {
+        //actions possible: start, end, abort (clear all timers) and postpone (no idea what it is in our case)
+        "shower_routine":
+        {
+          "start": "date object", //null by default
+          "end": "date object" //null by default
+        },
+
+        //We dont have new log interface for that, but logicaly user should be able to set, change and delete entry
+        "sleep_log": "number", //float most likely
+
+        //No interface again, but most likely will be same stuff as in current training book.
+        "release_log": {},
+
+        //No idea what exactly will be there
+        "yoga": {}
+      },
+
+      "commitments_optional":
+      {
+        //It seems it will be different from current one we have. No info yet
+        "hypnotic_conditioning": {},
+
+        //No info
+        "makeup_session": {},
+
+        //actions possible: start, end and abort (clear all timers)
+        "buttplug_training":
+        {
+          "start": "date object",
+          "end": "date object"
+        }
+      },
+
+      "reminders":
+      [
+        {
+          "header": "string",
+
+          //later we might want to insert HTML pieces
+          "body": "string",
+          "link_text": "string",
+          "link_url": "url string"
+        }
+      ]
+    }
+  ],
+
+  "girl_modes":
+  [
+
+  ]
+}

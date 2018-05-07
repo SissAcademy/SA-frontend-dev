@@ -1,0 +1,135 @@
+@import "values.scss";
+
+.popup-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  
+  div.background-toggle
+  {
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    tab-index: -1;
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  section.popup-main
+  {
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    border-radius: 16px;
+  }
+}
+
+
+
+#letter-popup
+{
+  section.popup-main
+  {
+    flex-basis: 788px;
+    
+    p.login-hint
+    {
+      margin-bottom: 16px;
+      font-family:Roboto;
+      font-weight: 100;
+      font-size:48px;
+      color: $STB-header;
+      text-align:center;
+    }
+    
+    button.letter-link
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      background-image:linear-gradient(-180deg, #fde5ff 0%, #ffa2fc 100%);
+      width:228px;
+      height:50px;
+      margin: 0 auto;
+      border:1px solid #ff9bee;
+      border-radius:8px;
+      font-family:Roboto;
+      font-weight: 200;
+      font-size:24px;
+      color:#dd52b1;
+      text-align:center;
+      text-transform: capitalize;
+    }
+  
+    button.letter-link:hover
+    {
+      border:1px solid #ea00c1;
+      color:#f419ae;
+    }
+  
+    button.letter-link:active
+    {
+      background-image:linear-gradient(-180deg, #f498ff 0%, #ff9cfc 100%);
+      border:1px solid #f387e0;
+      color:#dd52b1;
+    }
+  
+    button.letter-link:disabled
+    {
+      background-image:linear-gradient(-180deg, #fde5ff 0%, #ffa2fc 100%);
+      border:1px solid rgba(255,155,238,0.72);
+      color:rgb(214,121,185);
+      cursor: auto;
+      opacity: 0.5;
+    }
+    
+    h3
+    {
+      font-family:Roboto;
+      font-weight: 100;
+      font-size:18px;
+      color:#c93c80;
+      text-align:left;
+    }
+    
+    section
+    {
+      border:5px solid #ff85c2;
+      border-radius:8px;
+      width:783px;
+      height:228px;
+      
+      ul
+      {
+        li {display: inline-block}
+        
+        img
+        {
+          box-sizing: content-box;
+          width: 60px;
+          height: 60px;
+        }
+        
+        img.current
+        {
+          border: 2px solid #c93c80;
+        }
+        img.star
+        {
+          background-color: #ff85c2;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

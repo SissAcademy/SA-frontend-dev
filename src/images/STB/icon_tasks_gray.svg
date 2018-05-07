@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="47px" viewBox="0 0 41 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Task Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TB---Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TrainingBook---Overview" transform="translate(-56.000000, -1272.000000)">
+            <g id="Group-25" transform="translate(25.000000, 973.000000)">
+                <g id="Task-Icon" transform="translate(33.000000, 301.000000)">
+                    <g id="Tasks">
+                        <rect id="Rectangle-10" stroke="#9B9B9B" stroke-width="3" x="0" y="8.55924171" width="37" height="34.2369668" rx="5"></rect>
+                        <path d="M7.64629048,5.01729317 L7.64293819,12.2434273 L29.8200468,12.2434273 L29.8200468,4.82621689 L24.0826567,4.82621689 C24.0826567,4.82621689 24.1843115,0.0817223401 19.2310253,0.0817223401 C14.277739,0.0817223401 13.3705635,4.96915024 13.3705635,4.96915024 C13.3705635,4.96915024 7.64629048,5.01729317 7.64629048,5.01729317 Z" id="Path-15" stroke="#9B9B9B" stroke-width="3" fill="#FFFFFF"></path>
+                        <polyline id="Path-16" stroke="#979797" stroke-width="3" points="9.49940806 28.2785056 15.2367531 32.3720391 28.31142 20.2103341"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

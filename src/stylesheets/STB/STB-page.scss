@@ -1,0 +1,178 @@
+@import "../values.scss";
+
+#STB-page
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe9f4;
+  
+  section.page-content
+  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    
+    header.STB-header
+    {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 48px;
+    
+      h1
+      {
+        margin-left: 124px;
+        margin-bottom: 8px;
+        font-weight: 100;
+        font-size: 36px;
+        color: $STB-header;
+      }
+    
+      button.setup-btn
+      {
+        display: inline-block;
+        background-color: transparent;
+        text-transform: capitalize;
+        width: auto;
+        height: auto;
+        margin-bottom: 4px;
+        color: $setup-button;
+        font-size: 14px;
+      
+        &::before
+        {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          background: url("../../images/common/gear.png") no-repeat 0 0;
+          background-size: contain;
+          width: 24px;
+          height: 24px;
+          margin-right: 4px;
+        }
+      }
+    }
+    
+    section.main-section
+    {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+    
+      aside
+      {
+        
+        nav.STB-navigation
+        {
+          
+          ul
+          {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+            border:1px solid #979797;
+            border-right-width: 0;
+            border-top-left-radius:8px;
+            border-bottom-left-radius:8px;
+            box-shadow:0 0 4px 0 rgba(0,0,0,0.50);
+    
+            &:first-of-type {margin-top: 8px;}
+    
+            li
+            {
+              &:not(:last-of-type) a {border-bottom: 1px solid $aside-link-inner-border;}
+              a
+              {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 92px;
+                height: 100px;
+                font-size: 12px;
+                font-weight: bold;
+                color:$dusty-gray;
+                text-transform: uppercase;
+                
+                &.active {background-color: $tickle-me-pink; color: white;}
+                &::before
+                {
+                  content: '';
+                  height: 50px;
+                  width: 50px;
+                  margin-bottom: 8px;
+                }
+              }
+            }
+  
+            a:hover {background-color: $tickle-me-pink; color: white;}
+            li:first-child a{border-top-left-radius: 7px;}
+            li:last-child a{border-bottom-left-radius: 7px;}
+          }
+          
+          ul.today-next-week
+          {
+            li { a::before {background: url("../../images/STB/icon_clock_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.active::before {background: url("../../images/STB/icon_clock_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.today:hover::before {background: url("../../images/STB/icon_clock_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.next-week:hover::before {background: url("../../images/STB/icon_clock_white.svg") no-repeat 0 0; background-size: contain;}}
+          }
+  
+          ul.girl-mode-wardrobe
+          {
+            li { a.girl-mode::before {background: url("../../images/STB/icon_girl_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.girl-mode.active::before {background: url("../../images/STB/icon_girl_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.wardrobe::before {background: url("../../images/STB/icon_wardrobe_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.wardrobe.active::before {background: url("../../images/STB/icon_wardrobe_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.girl-mode:hover::before {background: url("../../images/STB/icon_girl_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.wardrobe:hover::before {background: url("../../images/STB/icon_wardrobe_white.svg") no-repeat 0 0; background-size: contain;}}
+          }
+          
+          ul.my-something
+          {
+            li { a.my-careers::before {background: url("../../images/STB/icon_career_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-careers.active::before {background: url("../../images/STB/icon_career_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-courses::before {background: url("../../images/STB/icon_course_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-courses.active::before {background: url("../../images/STB/icon_course_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-stats::before {background: url("../../images/STB/icon_stats_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-stats.active::before {background: url("../../images/STB/icon_stats_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-rules::before {background: url("../../images/STB/icon_rules_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.my-rules.active::before {background: url("../../images/STB/icon_rules_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.wardrobe:hover::before {background: url("../../images/STB/icon_wardrobe_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.my-careers:hover::before {background: url("../../images/STB/icon_career_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.my-courses:hover::before {background: url("../../images/STB/icon_course_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.my-stats:hover::before {background: url("../../images/STB/icon_stats_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.my-rules:hover::before {background: url("../../images/STB/icon_rules_white.svg") no-repeat 0 0; background-size: contain;}}
+          }
+  
+          ul.logs
+          {
+            li { a.release-log::before {background: url("../../images/STB/icon_release_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.release-log.active::before {background: url("../../images/STB/icon_release_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.sleep-log::before {background: url("../../images/STB/icon_sleep_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.sleep-log.active::before {background: url("../../images/STB/icon_sleep_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.hypno-log::before {background: url("../../images/STB/icon_girl_hypno_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.hypno-log.active::before {background: url("../../images/STB/icon_girl_hypno_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.task-log::before {background: url("../../images/STB/icon_tasks_gray.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.task-log.active::before {background: url("../../images/STB/icon_tasks_white.svg") no-repeat 0 0; background-size: contain;} }
+            li { a.release-log:hover::before {background: url("../../images/STB/icon_release_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.sleep-log:hover::before {background: url("../../images/STB/icon_sleep_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.hypno-log:hover::before {background: url("../../images/STB/icon_girl_hypno_white.svg") no-repeat 0 0; background-size: contain;}}
+            li { a.task-log:hover::before {background: url("../../images/STB/icon_tasks_white.svg") no-repeat 0 0; background-size: contain;}}
+          }
+        }
+      }
+      
+      main
+      {
+        flex-grow: 1;
+        border:1px solid #979797;
+        border-radius:8px;
+        box-shadow:0 0 4px 0 rgba(0,0,0,0.50);
+        background-color: white;
+      }
+    }
+  }
+}

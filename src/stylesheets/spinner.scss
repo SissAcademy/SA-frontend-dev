@@ -1,0 +1,34 @@
+.spinner-container
+{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  
+  animation-name: rotating;
+  animation-duration: 10s;
+  
+  div
+  {
+    position: absolute;
+    background-color: #9E0274;
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  :nth-child(1) {transform: rotate(90deg) translate(-6px, 0)}
+  :nth-child(2) {transform: rotate(120deg) translate(-10px, -11px)}
+  :nth-child(3) {transform: rotate(150deg) translate(-16px, -18px)}
+  :nth-child(4) {transform: rotate(180deg) translate(-26px, -22px)}
+  :nth-child(5) {transform: rotate(210deg) translate(-38px, -20px)}
+}
+
+@keyframes rotating {
+  0% {
+  
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+  }
+}
