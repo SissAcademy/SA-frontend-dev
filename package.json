@@ -48,13 +48,9 @@
     "postcss-import": "^11.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-<<<<<<< HEAD
     "url-loader": "^0.6.2",
-    "webpack-dev-server": "^2.10.1"
-=======
     "webpack-dev-server": "^2.10.1",
     "mocha": "^5.0.5",
     "chai": "^4.1.2"
->>>>>>> 60e3eb7f6314a13a206a37a87e5eafcf834a6338
   }
 }
